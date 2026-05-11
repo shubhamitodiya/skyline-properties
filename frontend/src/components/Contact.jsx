@@ -13,7 +13,7 @@ const Contact = () => {
     console.log("Button Clicked");
     await axios
       .post(
-        "https://skyline-properties.onrender.com",
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/message/send`,
         {
           name,
           email,
